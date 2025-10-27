@@ -1,30 +1,67 @@
 baseURL = 'https://example.org/'
 languageCode = 'en-us'
 title = 'Your Project Name'
-theme = ["PaperMod"]
+theme = []
+
+# Enable goldmark for better markdown processing
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      definitionList = true
+      footnote = true
+      linkify = true
+      strikethrough = true
+      table = true
+      taskList = true
+      typographer = true
+  [markup.highlight]
+    style = 'github'
+    lineNos = true
+    codeFences = true
+    noClasses = false
 
 [pagination]
   pagerSize = 10
 
 [params]
-  description = "A modern Hugo website"
+  description = "A modern Hugo website built with minimal JavaScript and beautiful design"
   author = "Your Name"
+  mainSections = ["posts"]
   
-  # PaperMod theme settings
+  # SEO & Meta
   showToc = true
   showReadingTime = true
   showPostNavLinks = true
+  showBreadcrumbs = true
+  showWordCount = true
+  showRssButtonInSectionTermList = true
+  showAllPostsInArchive = false
+  hideFooter = false
   
-  # Title separator for pages
-  titleSeparator = ""
+  # Theme settings
+  titleSeparator = "|"
+  themeVariant = "auto" # auto, light, dark
+  disableThemeToggle = false
+  disableScrollToTop = false
+  ShowCodeCopyButtons = true
   
-[params.homeInfoParams]
-  Title = "Hi there 👋"
-  Content = "Welcome to my blog. I'll be sharing thoughts, tutorials, and more here."
+  # Social links
+  [params.socialIcons]
+    email = "mailto:your@email.com"
+    github = "https://github.com/yourusername"
+    twitter = "https://twitter.com/yourusername"
+    linkedin = "https://linkedin.com/in/yourusername"
+  
+  # Homepage
+  [params.homeInfoParams]
+    Title = "Hi there 👋"
+    Content = "Welcome to my blog! I'll be sharing thoughts, tutorials, and insights about web development, technology, and more."
+  
+  # Footer
+  [params.footer]
+    hideCopyright = false
+    text = "Built with ❤️ and Hugo"
 
-[params.footer]
-  text = "Built with ❤️"
-  
 [menu]
   [[menu.main]]
     identifier = "archives"
@@ -33,11 +70,21 @@ theme = ["PaperMod"]
     weight = 10
     
   [[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags/"
+    weight = 20
+    
+  [[menu.main]]
     identifier = "about"
     name = "About"
     url = "/about/"
-    weight = 20
+    weight = 30
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
 

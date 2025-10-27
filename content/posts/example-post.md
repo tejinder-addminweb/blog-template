@@ -1,35 +1,101 @@
 ---
-title: "Getting Started with Hugo and PaperMod"
-date: 2024-01-01T10:00:00Z
+title: "Building a Modern Blog with Hugo"
+date: 2024-01-02T14:30:00Z
 draft: false
 showToc: true
-description: "Learn how to set up a beautiful blog with Hugo and PaperMod theme"
-tags: ["hugo", "tutorial", "web development"]
+description: "A complete guide to building a beautiful and fast blog with Hugo static site generator"
+tags: ["hugo", "tutorial", "blog"]
+categories: ["Web Development"]
+author: "Your Name"
 ---
 
-This is an example blog post with **PaperMod** theme!
+Welcome to this comprehensive guide on building a modern blog with Hugo! This example demonstrates all the features of this custom Hugo theme.
 
-## Features
+## Why Use Hugo?
 
-PaperMod is one of the most popular Hugo themes for blogs because it offers:
+Hugo stands out among static site generators for several reasons:
 
-- 📱 **Responsive design** - Looks great on all devices
-- 🔍 **SEO optimized** - Perfect for search engines
-- ⚡ **Fast performance** - Lightweight and blazingly fast
-- 🎨 **Beautiful UI** - Clean and modern design
-- 🌙 **Dark mode** - Automatic theme switching
-- 📊 **Reading time** - Automatic reading time calculation
-- 🔖 **Table of contents** - Auto-generated TOC
+> "Hugo is the fastest static site generator in the world." - Hugo.io
 
-## Getting Started
+### Performance Benefits
 
-1. The theme is already configured
-2. Edit `content/posts/` to create new posts
-3. Customize settings in `config.toml`
+1. **Incredible Speed** - Generate sites in milliseconds
+2. **No Database** - Everything is file-based
+3. **Easy Deployment** - Just upload static files
+4. **Version Control** - Track changes with Git
+5. **Security** - No server-side vulnerabilities
 
-## Writing Content
+## Code Examples
 
-This theme supports all standard Markdown features plus Hugo shortcodes for advanced functionality.
+This theme includes syntax highlighting for code blocks:
 
-Happy blogging! 🎉
+```python
+def fibonacci(n):
+    """Generate Fibonacci sequence"""
+    a, b = 0, 1
+    for _ in range(n):
+        yield a
+        a, b = b, a + b
+
+# Usage
+for num in fibonacci(10):
+    print(num)
+```
+
+### JavaScript Example
+
+```javascript
+const greet = (name) => {
+    console.log(`Hello, ${name}!`);
+};
+
+greet('Hugo');
+```
+
+## Lists and Formatting
+
+### Unordered Lists
+- Item one
+- Item two
+- Item three
+
+### Ordered Lists
+1. First item
+2. Second item
+3. Third item
+
+### Emphasized Text
+This is **bold text** and this is *italic text*.
+
+## Tables
+
+Here's a comparison table:
+
+| Feature | Hugo | WordPress |
+|---------|------|-----------|
+| Speed | ⚡ Very Fast | 🐢 Slower |
+| Security | ✅ Very Secure | ⚠️ Vulnerable |
+| Hosting | 📦 Free/Cheap | 💰 Expensive |
+
+## Blockquotes
+
+> "The best way to learn is by doing. Start building your site today!"
+
+## Features Included in This Theme
+
+- 🌙 **Dark Mode** - Automatic theme detection with manual toggle
+- 📱 **Responsive** - Perfect on mobile, tablet, and desktop
+- 🔍 **SEO Optimized** - Meta tags, Open Graph, and more
+- ⚡ **Fast** - Minimal JavaScript, optimized CSS
+- 📊 **Reading Stats** - Automatic reading time and word count
+- 🔖 **TOC** - Auto-generated table of contents
+- 📝 **Markdown** - Full Markdown support with extensions
+- 🎨 **Beautiful** - Clean, modern design
+
+## Conclusion
+
+Hugo is an excellent choice for blogs, documentation sites, and any static website. This theme provides all the features you need while maintaining simplicity and performance.
+
+Happy coding! 🚀
+
 

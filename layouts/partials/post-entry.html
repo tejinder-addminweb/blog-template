@@ -1,0 +1,37 @@
+<article class="post-entry">
+    <header class="post-entry-header">
+        <h2 class="post-entry-title">
+            <a href="{{ .Permalink }}" rel="bookmark">{{ .Title }}</a>
+        </h2>
+        <div class="post-meta">
+            <time class="post-meta-date">{{ .Date.Format "January 2, 2006" }}</time>
+            {{- if site.Params.showReadingTime }}
+                {{ if .ReadingTime }} • {{ .ReadingTime }} min read {{ end }}
+            {{- end }}
+            {{- if site.Params.showWordCount }}
+                {{ if .WordCount }} • {{ .WordCount }} words {{ end }}
+            {{- end }}
+        </div>
+    </header>
+    
+    {{- if .Description }}
+    <div class="post-entry-description">
+        {{ .Description | markdownify }}
+    </div>
+    {{- else if .Summary }}
+    <div class="post-entry-description">
+        {{ .Summary }}
+    </div>
+    {{- end }}
+    
+    <footer class="post-entry-footer">
+        {{- if .Params.tags }}
+        <div class="post-entry-tags">
+            {{ range $index, $tag := .Params.tags }}
+                <a href="{{ "/tags/" | relURL }}{{ $tag | urlize }}" class="tag">{{ $tag }}</a>
+            {{ end }}
+        </div>
+        {{- end }}
+    </footer>
+</article>
+

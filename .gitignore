@@ -1,20 +1,22 @@
-# Hugo
-public/
-resources/
-.hugo_build.lock
+# Hugo output
+/public
 
-# OS
+# OS files
 .DS_Store
 Thumbs.db
+desktop.ini
 
-# Editor
-.idea/
+# Editor files
 .vscode/
+.idea/
 *.swp
 *.swo
 *~
+.#*
 
-# Dependencies
-node_modules/
-package-lock.json
+# Temporary files
+*.tmp
+*.log
 
+# Hugo resource cache
+/.hugo_build.lock
