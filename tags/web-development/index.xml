@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Web-Development on Modern Blog Template</title><link>https://tejinder-addminweb.github.io/blog-template/tags/web-development/</link><description>Recent content in Web-Development on Modern Blog Template</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 01 Jan 2024 10:00:00 +0000</lastBuildDate><atom:link href="https://tejinder-addminweb.github.io/blog-template/tags/web-development/index.xml" rel="self" type="application/rss+xml"/><item><title>Getting Started with Hugo</title><link>https://tejinder-addminweb.github.io/blog-template/posts/first-post/</link><pubDate>Mon, 01 Jan 2024 10:00:00 +0000</pubDate><guid>https://tejinder-addminweb.github.io/blog-template/posts/first-post/</guid><description>&lt;p&gt;Welcome to your modern Hugo blog! This is a &lt;strong&gt;custom-built Hugo site&lt;/strong&gt; with beautiful design and all the features you need.&lt;/p&gt;
+&lt;h2 id="what-is-hugo"&gt;What is Hugo?&lt;/h2&gt;
+&lt;p&gt;Hugo is one of the &lt;strong&gt;most popular static site generators&lt;/strong&gt;. Built with Go, it&amp;rsquo;s incredibly fast at building sites with thousands of pages.&lt;/p&gt;
+&lt;h3 id="key-benefits"&gt;Key Benefits&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;⚡ &lt;strong&gt;Blazing Fast&lt;/strong&gt; - Generate sites in seconds&lt;/li&gt;
+&lt;li&gt;📝 &lt;strong&gt;Markdown Support&lt;/strong&gt; - Write content in simple Markdown&lt;/li&gt;
+&lt;li&gt;🎨 &lt;strong&gt;Themes &amp;amp; Customization&lt;/strong&gt; - Beautiful themes or build your own&lt;/li&gt;
+&lt;li&gt;🔍 &lt;strong&gt;SEO Friendly&lt;/strong&gt; - Optimized for search engines&lt;/li&gt;
+&lt;li&gt;🌐 &lt;strong&gt;Static Files&lt;/strong&gt; - Deploy anywhere easily&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="writing-content"&gt;Writing Content&lt;/h2&gt;
+&lt;p&gt;This site supports all standard Markdown features:&lt;/p&gt;</description></item></channel></rss>

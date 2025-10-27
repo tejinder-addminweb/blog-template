@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Blog on Modern Blog Template</title><link>https://tejinder-addminweb.github.io/blog-template/tags/blog/</link><description>Recent content in Blog on Modern Blog Template</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Tue, 02 Jan 2024 14:30:00 +0000</lastBuildDate><atom:link href="https://tejinder-addminweb.github.io/blog-template/tags/blog/index.xml" rel="self" type="application/rss+xml"/><item><title>Building a Modern Blog with Hugo</title><link>https://tejinder-addminweb.github.io/blog-template/posts/example-post/</link><pubDate>Tue, 02 Jan 2024 14:30:00 +0000</pubDate><guid>https://tejinder-addminweb.github.io/blog-template/posts/example-post/</guid><description>&lt;p&gt;Welcome to this comprehensive guide on building a modern blog with Hugo! This example demonstrates all the features of this custom Hugo theme.&lt;/p&gt;
+&lt;h2 id="why-use-hugo"&gt;Why Use Hugo?&lt;/h2&gt;
+&lt;p&gt;Hugo stands out among static site generators for several reasons:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;Hugo is the fastest static site generator in the world.&amp;rdquo; - Hugo.io&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id="performance-benefits"&gt;Performance Benefits&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Incredible Speed&lt;/strong&gt; - Generate sites in milliseconds&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;No Database&lt;/strong&gt; - Everything is file-based&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Easy Deployment&lt;/strong&gt; - Just upload static files&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Version Control&lt;/strong&gt; - Track changes with Git&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Security&lt;/strong&gt; - No server-side vulnerabilities&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="code-examples"&gt;Code Examples&lt;/h2&gt;
+&lt;p&gt;This theme includes syntax highlighting for code blocks:&lt;/p&gt;</description></item></channel></rss>
