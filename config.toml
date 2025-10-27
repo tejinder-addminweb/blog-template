@@ -1,6 +1,6 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://tejinder-addminweb.github.io/blog-template/'
 languageCode = 'en-us'
-title = 'Your Project Name'
+title = 'Modern Blog Template'
 theme = []
 
 # Enable goldmark for better markdown processing
@@ -25,7 +25,7 @@ theme = []
 
 [params]
   description = "A modern Hugo website built with minimal JavaScript and beautiful design"
-  author = "Your Name"
+  author = "Tejinder"
   mainSections = ["posts"]
   
   # SEO & Meta
