@@ -1,0 +1,43 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'Your Project Name'
+theme = ["PaperMod"]
+
+[pagination]
+  pagerSize = 10
+
+[params]
+  description = "A modern Hugo website"
+  author = "Your Name"
+  
+  # PaperMod theme settings
+  showToc = true
+  showReadingTime = true
+  showPostNavLinks = true
+  
+  # Title separator for pages
+  titleSeparator = ""
+  
+[params.homeInfoParams]
+  Title = "Hi there 👋"
+  Content = "Welcome to my blog. I'll be sharing thoughts, tutorials, and more here."
+
+[params.footer]
+  text = "Built with ❤️"
+  
+[menu]
+  [[menu.main]]
+    identifier = "archives"
+    name = "Archives"
+    url = "/archives/"
+    weight = 10
+    
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 20
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
