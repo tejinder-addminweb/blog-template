@@ -2,8 +2,21 @@
     <nav class="nav">
         <div class="container">
             <div class="nav-container">
-                <a href="{{ if site.Params.projectName }}/{{ site.Params.projectName | urlize }}{{ else }}{{ "/" | relURL }}{{ end }}" class="nav-brand">
-                    {{ site.Params.projectName | default .Site.Title }}
+                <a href="{{ "/" | relURL }}" class="nav-brand">
+                    {{- $projectName := "" }}
+                    {{- if site.Params.projectName }}
+                        {{- $projectName = site.Params.projectName }}
+                    {{- else if .Site.Title }}
+                        {{- $projectName = .Site.Title }}
+                    {{- else }}
+                        {{- $baseURLPath := trim (replaceRE "https?://[^/]+/([^/]+)/?.*" "$1" .Site.BaseURL) "/" }}
+                        {{- if ne $baseURLPath "" }}
+                            {{- $projectName = $baseURLPath | title | replaceRE "-" " " }}
+                        {{- else }}
+                            {{- $projectName = "Blog" }}
+                        {{- end }}
+                    {{- end }}
+                    {{ $projectName }}
                 </a>
                 
                 <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
