@@ -2,7 +2,7 @@
     <nav class="nav">
         <div class="container">
             <div class="nav-container">
-                <a href="{{ "/" | relURL }}" class="nav-brand">
+                <a href="{{ site.Params.projectName | relURL }}" class="nav-brand">
                     {{- $projectName := "" }}
                     {{- if site.Params.projectName }}
                         {{- $projectName = site.Params.projectName }}
