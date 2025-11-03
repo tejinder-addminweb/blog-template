@@ -61,4 +61,10 @@ console.log(greet('World'));
 ```
 
 Happy blogging! 🎉
-
+{{< cta 
+    title="Ready to Take Action?"
+    description="This CTA will subscribe the user so that he will be able to get notified we upload a new blog"
+    primaryText="Subscribe Us"
+    primaryUrl="https://tejinder-addminweb.github.io/hugoblog/posts/should-i-buy-my-exact-car-again-after-the-accident-1761217621771/"
+    primaryExternal="true"
+>}}

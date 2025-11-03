@@ -6,9 +6,10 @@
     
     <article class="post-single">
         <header class="post-header">
-            {{- if .Params.image }}
+            {{- $image := .Params.image | default .Params.featured_image }}
+            {{- if $image }}
             <div class="post-featured-image">
-                <img src="{{ .Params.image | absURL }}" alt="{{ .Title }}" />
+                <img src="{{ $image | absURL }}" alt="{{ .Params.image_alt | default .Title }}" />
             </div>
             {{- end }}
             
@@ -37,8 +38,6 @@
         {{ if .Param "showShareButtons" }}
             {{ partial "share_icons.html" . }}
         {{ end }}
-        
-        {{ partial "cta.html" . }}
     </article>
 </div>
 {{ end }}

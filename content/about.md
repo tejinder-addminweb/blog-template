@@ -49,3 +49,5 @@ Edit the `config.toml` file to customize:
 
 Happy blogging! 🎉
 
+{{< cta >}}
+

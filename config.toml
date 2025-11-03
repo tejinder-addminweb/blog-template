@@ -75,10 +75,6 @@ theme = []
       text = "Subscribe to Newsletter"
       url = "/newsletter"
       external = false
-    [params.cta.secondaryButton]
-      text = "Follow on Twitter"
-      url = "https://twitter.com/yourusername"
-      external = true
     footerText = "No spam, unsubscribe anytime."
 
 [menu]
