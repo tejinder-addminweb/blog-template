@@ -3,7 +3,7 @@
 # For GitHub Pages deployment
 baseURL = 'https://tejinder-addminweb.github.io/blog-template/'
 languageCode = 'en-us'
-title = 'Modern Blog Template'
+title = ''
 theme = []
 
 # Enable goldmark for better markdown processing
