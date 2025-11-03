@@ -29,6 +29,7 @@ theme = []
 [params]
   description = "A modern Hugo website built with minimal JavaScript and beautiful design"
   author = "Tejinder"
+  projectName = "Blog Template"  # Project name to display in navigation (URL will be auto-slugified like /hugo-template)
   mainSections = ["posts"]
   
   # SEO & Meta

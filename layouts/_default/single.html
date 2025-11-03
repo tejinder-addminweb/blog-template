@@ -6,6 +6,12 @@
     
     <article class="post-single">
         <header class="post-header">
+            {{- if .Params.image }}
+            <div class="post-featured-image">
+                <img src="{{ .Params.image | absURL }}" alt="{{ .Title }}" />
+            </div>
+            {{- end }}
+            
             <h1 class="post-title">{{ .Page.Title }}</h1>
             
             {{ partial "post_meta.html" . }}

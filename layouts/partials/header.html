@@ -2,8 +2,8 @@
     <nav class="nav">
         <div class="container">
             <div class="nav-container">
-                <a href="{{ "/" | relURL }}" class="nav-brand">
-                    {{ .Site.Title }}
+                <a href="{{ if site.Params.projectName }}/{{ site.Params.projectName | urlize }}{{ else }}{{ "/" | relURL }}{{ end }}" class="nav-brand">
+                    {{ site.Params.projectName | default .Site.Title }}
                 </a>
                 
                 <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">

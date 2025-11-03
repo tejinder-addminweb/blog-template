@@ -3,10 +3,6 @@
 {{- $cta := site.Params.cta }}
 <div class="post-cta">
     <div class="cta-container">
-        {{- if $cta.icon }}
-        <div class="cta-icon">{{ $cta.icon | safeHTML }}</div>
-        {{- end }}
-        
         {{- if $cta.title }}
         <h2 class="cta-title">{{ $cta.title }}</h2>
         {{- end }}
