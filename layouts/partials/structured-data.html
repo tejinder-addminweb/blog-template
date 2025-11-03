@@ -26,8 +26,8 @@
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "{{ .Permalink }}"
-  }{{- with .Params.categories }},
-  "articleSection": "{{ index . 0 | safeJS }}"{{- end }}{{- with .Params.tags }},
+  }{{- if or .Params.categories .Params.tags }},{{- end }}{{- with .Params.categories }}
+  "articleSection": "{{ index . 0 | safeJS }}"{{- if $.Params.tags }},{{- end }}{{- end }}{{- with .Params.tags }}
   "keywords": "{{ delimit . ", " | safeJS }}"{{- end }},
   "inLanguage": "{{ .Site.LanguageCode }}",
   "url": "{{ .Permalink }}",
@@ -51,8 +51,7 @@
       "@type": "ImageObject",
       "url": "{{ if isset .Site.Params "logo" }}{{ .Site.Params.logo | absURL }}{{ else }}{{ .Site.BaseURL }}logo.png{{ end }}"
     }
-  },
-  {{- with .OutputFormats.Get "RSS" }},
+  }{{- with .OutputFormats.Get "RSS" }},
   "potentialAction": {
     "@type": "SearchAction",
     "target": {
