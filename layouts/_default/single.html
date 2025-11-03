@@ -31,6 +31,8 @@
         {{ if .Param "showShareButtons" }}
             {{ partial "share_icons.html" . }}
         {{ end }}
+        
+        {{ partial "cta.html" . }}
     </article>
 </div>
 {{ end }}

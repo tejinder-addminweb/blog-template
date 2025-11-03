@@ -64,6 +64,21 @@ theme = []
   [params.footer]
     hideCopyright = false
     text = "Built with ❤️ and Hugo"
+  
+  # CTA (Call To Action) for blog posts
+  [params.cta]
+    title = "Enjoyed this article?"
+    description = "Get the latest posts delivered right to your inbox. Join our newsletter to stay updated with fresh content."
+    icon = "📬"
+    [params.cta.primaryButton]
+      text = "Subscribe to Newsletter"
+      url = "/newsletter"
+      external = false
+    [params.cta.secondaryButton]
+      text = "Follow on Twitter"
+      url = "https://twitter.com/yourusername"
+      external = true
+    footerText = "No spam, unsubscribe anytime."
 
 [menu]
   [[menu.main]]

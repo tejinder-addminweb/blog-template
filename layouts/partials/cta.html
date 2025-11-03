@@ -1,0 +1,47 @@
+{{- if .IsPage }}
+{{- if not (.Param "hideCTA") }}
+{{- $cta := site.Params.cta }}
+<div class="post-cta">
+    <div class="cta-container">
+        {{- if $cta.icon }}
+        <div class="cta-icon">{{ $cta.icon | safeHTML }}</div>
+        {{- end }}
+        
+        {{- if $cta.title }}
+        <h2 class="cta-title">{{ $cta.title }}</h2>
+        {{- end }}
+        
+        {{- if $cta.description }}
+        <p class="cta-description">{{ $cta.description | markdownify }}</p>
+        {{- end }}
+        
+        <div class="cta-buttons">
+            {{- if $cta.primaryButton }}
+            {{- if $cta.primaryButton.text }}
+            <a href="{{ $cta.primaryButton.url | default "/" | absURL }}" 
+               class="cta-button cta-button-primary"
+               {{- if $cta.primaryButton.external }} target="_blank" rel="noopener noreferrer"{{- end }}>
+                {{ $cta.primaryButton.text }}
+            </a>
+            {{- end }}
+            {{- end }}
+            
+            {{- if $cta.secondaryButton }}
+            {{- if $cta.secondaryButton.text }}
+            <a href="{{ $cta.secondaryButton.url | default "/" | absURL }}" 
+               class="cta-button cta-button-secondary"
+               {{- if $cta.secondaryButton.external }} target="_blank" rel="noopener noreferrer"{{- end }}>
+                {{ $cta.secondaryButton.text }}
+            </a>
+            {{- end }}
+            {{- end }}
+        </div>
+        
+        {{- if $cta.footerText }}
+        <p class="cta-footer">{{ $cta.footerText | markdownify }}</p>
+        {{- end }}
+    </div>
+</div>
+{{- end }}
+{{- end }}
+
