@@ -268,6 +268,15 @@ a:hover {
     color: var(--text-muted);
     font-size: 0.9rem;
     margin-bottom: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+}
+
+.post-meta-date,
+.post-meta-reading-time {
+    display: inline-block;
 }
 
 .post-content {
@@ -402,7 +411,7 @@ a:hover {
 }
 
 .faq-item[open] .faq-question::before {
-    content: "−";
+    content: "-";
     transform: rotate(0deg);
 }
 
