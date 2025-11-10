@@ -77,25 +77,6 @@ theme = []
       external = false
     footerText = "No spam, unsubscribe anytime."
 
-[menu]
-  [[menu.main]]
-    identifier = "archives"
-    name = "Archives"
-    url = "/archives/"
-    weight = 10
-    
-  [[menu.main]]
-    identifier = "tags"
-    name = "Tags"
-    url = "/tags/"
-    weight = 20
-    
-  [[menu.main]]
-    identifier = "about"
-    name = "About"
-    url = "/about/"
-    weight = 30
-
 [outputs]
   home = ["HTML", "RSS", "JSON"]
 
