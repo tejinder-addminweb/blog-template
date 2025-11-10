@@ -1,18 +1,6 @@
 <span class="post-meta-date">
-    {{ .Date.Format "January 2, 2006" }}
+    {{ .Date.Format "January 2, 2006" }} | {{ .ReadingTime }} min read
 </span>
-
-{{- if site.Params.showReadingTime }}
-    {{ if .ReadingTime }}
-        <span class="post-meta-reading-time">{{ .ReadingTime }} min read</span>
-    {{ end }}
-{{- end }}
-
-{{- if site.Params.showWordCount }}
-    {{ if .WordCount }}
-        <span class="post-meta-word-count">{{ .WordCount }} words</span>
-    {{ end }}
-{{- end }}
 
 {{- if .Params.categories }}
     in

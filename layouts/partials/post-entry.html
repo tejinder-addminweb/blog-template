@@ -4,13 +4,7 @@
             <a href="{{ .Permalink }}" rel="bookmark">{{ .Title }}</a>
         </h2>
         <div class="post-meta">
-            <time class="post-meta-date">{{ .Date.Format "January 2, 2006" }}</time>
-            {{- if site.Params.showReadingTime }}
-                {{ if .ReadingTime }} • {{ .ReadingTime }} min read {{ end }}
-            {{- end }}
-            {{- if site.Params.showWordCount }}
-                {{ if .WordCount }} • {{ .WordCount }} words {{ end }}
-            {{- end }}
+            <time class="post-meta-date">{{ .Date.Format "January 2, 2006" }} | {{ .ReadingTime }} min read</time>
         </div>
     </header>
     
